@@ -16,5 +16,5 @@ if hist_button:  # al hacer clic en el botón
 
 if build_scatter:  # si la casilla de verificación está seleccionada
     st.write('Creación de un diagrama de dispersión del odómetro vs precio')
-    fig = px.scatter(car_data, x="odometer", y="price", xlabel="kilometraje en millas", ylabel="USD")
+    fig = px.scatter(car_data, x="odometer", y="price")
     st.plotly_chart(fig, use_container_width=True)
